@@ -20,6 +20,7 @@ import Typosquatting from "./pages/Typosquatting";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import { AppSidebar } from "./components/AppSidebar";
+import AIChatbot from "./components/AIChatbot";
 import { useState } from "react";
 
 const queryClient = new QueryClient();
@@ -67,6 +68,7 @@ const App = () => {
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </main>
+              <AIChatbot />
             </div>
           </SidebarProvider>
         </BrowserRouter>
