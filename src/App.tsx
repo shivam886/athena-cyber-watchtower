@@ -7,11 +7,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import VendorRisk from "./pages/VendorRisk";
-import AttackSurface from "./pages/AttackSurface";
-import DataLeaks from "./pages/DataLeaks";
-import Questionnaires from "./pages/Questionnaires";
-import Reports from "./pages/Reports";
+import ExecutiveSummary from "./pages/ExecutiveSummary";
+import RiskProfile from "./pages/RiskProfile";
+import Vulnerabilities from "./pages/Vulnerabilities";
+import Remediation from "./pages/Remediation";
+import RiskWaivers from "./pages/RiskWaivers";
+import Domains from "./pages/Domains";
+import IPAddresses from "./pages/IPAddresses";
+import DetectedProducts from "./pages/DetectedProducts";
+import IdentityBreaches from "./pages/IdentityBreaches";
+import Typosquatting from "./pages/Typosquatting";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import { AppSidebar } from "./components/AppSidebar";
@@ -48,11 +53,16 @@ const App = () => {
               <main className="flex-1 overflow-hidden">
                 <Routes>
                   <Route path="/" element={<Dashboard />} />
-                  <Route path="/vendor-risk" element={<VendorRisk />} />
-                  <Route path="/attack-surface" element={<AttackSurface />} />
-                  <Route path="/data-leaks" element={<DataLeaks />} />
-                  <Route path="/questionnaires" element={<Questionnaires />} />
-                  <Route path="/reports" element={<Reports />} />
+                  <Route path="/executive-summary" element={<ExecutiveSummary />} />
+                  <Route path="/risk-profile" element={<RiskProfile />} />
+                  <Route path="/vulnerabilities" element={<Vulnerabilities />} />
+                  <Route path="/remediation" element={<Remediation />} />
+                  <Route path="/risk-waivers" element={<RiskWaivers />} />
+                  <Route path="/domains" element={<Domains />} />
+                  <Route path="/ip-addresses" element={<IPAddresses />} />
+                  <Route path="/detected-products" element={<DetectedProducts />} />
+                  <Route path="/identity-breaches" element={<IdentityBreaches />} />
+                  <Route path="/typosquatting" element={<Typosquatting />} />
                   <Route path="/settings" element={<Settings />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
